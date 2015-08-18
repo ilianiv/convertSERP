@@ -6,7 +6,7 @@
 function convertSERP(input, limit, new_limit) {
   var first_letter = input[0].toLowerCase();
   
-  if (first_letter == 'w' || first_letter == 'x' || first_letter + input.substring(1) == 'p 9 9') {
+  if (first_letter == 'w' || first_letter == 'x' || input.indexOf('p 9 9') === 0 || input.indexOf('P 9 9') === 0) {
     return input;
   }
   

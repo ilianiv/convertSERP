@@ -4,7 +4,9 @@
  * @param new_limit items per page after conversion
  */
 function convertSERP(input, limit, new_limit) {
-  if (input[0].toLowerCase() == 'w') {
+  var first_letter = input[0].toLowerCase();
+  
+  if (first_letter == 'w' || first_letter == 'x' || first_letter + input.substring(1) == 'p 9 9') {
     return input;
   }
   
